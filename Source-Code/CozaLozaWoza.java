@@ -2,6 +2,7 @@
  *
  * @author LazPremarathna
  * @date 2017.07.18
+ * find the exercise on https://www3.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html
  */
 public class CozaLozaWoza {
     //attributes
@@ -9,7 +10,7 @@ public class CozaLozaWoza {
     private int upperBound;
 
     //behaviours
-    //initializing getters & setters
+    //initialize getters & setters
     public int getLowerBound() {
         return lowerBound;
     }
@@ -24,6 +25,7 @@ public class CozaLozaWoza {
     }
     //end of getters & setters
 
+    //method for print "COZA", "LOZA" & "WOZA"
     public void printNum() {
         int currentNumber;
         for (currentNumber = lowerBound; currentNumber <= upperBound; currentNumber++) {
@@ -49,6 +51,7 @@ public class CozaLozaWoza {
     //main method
     public static void main(String[] args) {
         CozaLozaWoza CLW = new CozaLozaWoza();
+        
         CLW.setLowerBound(1);
         CLW.setUpperBound(110);
         CLW.printNum();
